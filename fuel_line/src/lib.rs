@@ -57,7 +57,7 @@ macro_rules! templatify_buffer {
 #[cfg(test)]
 mod tests {
 
-  use bytes::BytesMut;
+  use bytes::{BytesMut, BufMut};
   use Render;
 
   #[test]
@@ -95,4 +95,3 @@ mod tests {
   }
 
 }
-
