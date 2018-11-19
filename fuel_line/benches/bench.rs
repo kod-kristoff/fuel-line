@@ -1,4 +1,3 @@
-#![feature(proc_macro)]
 #![feature(test)]
 
 // For tests
@@ -17,7 +16,6 @@ pub trait Render {
 
 #[cfg(test)]
 mod tests {
-  #![feature(proc_macro)]
 
   use bytes::{BytesMut, BufMut};
   use test::Bencher;
