@@ -4,7 +4,6 @@
 #[allow(unused_imports)]
 extern crate bytes;
 #[allow(unused_imports)]
-#[macro_use] extern crate fuel_line;
 #[macro_use] extern crate fuel_line_derive;
 #[allow(unused_imports)]
 extern crate uuid;
@@ -17,7 +16,6 @@ pub trait Render {
 #[cfg(test)]
 mod tests {
 
-  use bytes::{BytesMut, BufMut};
   use test::Bencher;
   use Render;
   use uuid::Uuid;
@@ -60,4 +58,3 @@ mod tests {
     });
   }
 }
-
